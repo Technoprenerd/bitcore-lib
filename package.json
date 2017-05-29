@@ -1,7 +1,7 @@
 {
-  "name": "bitcore-lib",
+  "name": "bitcore-lib-zcoin",
   "version": "0.14.0",
-  "description": "A pure and powerful JavaScript Bitcoin library.",
+  "description": "A pure and powerful JavaScript Zcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -88,7 +88,7 @@
     "lodash": "=3.10.1"
   },
   "devDependencies": {
-    "bitcore-build": "technoprenerd/bitcore-build-zcoin",
+    "bitcore-build": "bitpay/bitcore-build",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
