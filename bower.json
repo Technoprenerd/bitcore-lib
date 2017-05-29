@@ -1,5 +1,5 @@
 {
-  "name": "bitcore-lib",
+  "name": "bitcore-lib-zcoin",
   "main": "./bitcore-lib.min.js",
   "version": "0.13.19",
   "homepage": "http://bitcore.io",
@@ -11,7 +11,7 @@
     "globals"
   ],
   "keywords": [
-    "bitcoin",
+    "zcoin",
     "bitcore",
     "btc",
     "satoshi"

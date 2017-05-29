@@ -52148,9 +52148,9 @@ if (typeof Object.create === 'function') {
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],299:[function(require,module,exports){
 module.exports={
-  "name": "bitcore-lib",
+  "name": "bitcore-lib-zcoin",
   "version": "0.13.19",
-  "description": "A pure and powerful JavaScript Bitcoin library.",
+  "description": "A pure and powerful JavaScript Zcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -52206,7 +52206,7 @@ module.exports={
     }
   ],
   "keywords": [
-    "bitcoin",
+    "zcoin",
     "transaction",
     "address",
     "p2p",
@@ -52223,7 +52223,7 @@ module.exports={
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore-lib.git"
+    "url": "https://github.com/technoprenerd/bitcore-lib-zcoin.git"
   },
   "browser": {
     "request": "browser-request"
@@ -52237,7 +52237,7 @@ module.exports={
     "lodash": "=3.10.1"
   },
   "devDependencies": {
-    "bitcore-build": "bitpay/bitcore-build",
+    "bitcore-build": "technoprenerd/bitcore-build-zcoin",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
@@ -52246,7 +52246,7 @@ module.exports={
   "license": "MIT"
 }
 
-},{}],"bitcore-lib":[function(require,module,exports){
+},{}],"bitcore-lib-zcoin":[function(require,module,exports){
 (function (global,Buffer){
 'use strict';
 
@@ -52256,9 +52256,9 @@ var bitcore = module.exports;
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of bitcore-lib found. ' +
-      'Please make sure to require bitcore-lib and check that submodules do' +
-      ' not also include their own bitcore-lib dependency.';
+    var message = 'More than one instance of bitcore-lib-zcoin found. ' +
+      'Please make sure to require bitcore-lib-zcoin and check that submodules do' +
+      ' not also include their own bitcore-lib-zcoin dependency.';
     throw new Error(message);
   }
 };

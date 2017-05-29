@@ -5,20 +5,54 @@ Bitcore Library
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-lib)
 [![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-lib.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcore-lib)
 
-A pure and powerful JavaScript Bitcoin library.
+A pure and powerful JavaScript Zerocoin (Zcoin) library.
+
+TODO
+
+```
+bitcore-build 
+bitcore-lib.min.js maybe to -zcoin?
+
+lib/networks.js - zcoin nodes?
+
+```
+
+lib/networks.js livenet and testnet to zcoin network ::
+
+addNetwork({
+  name: 'livenet',
+  alias: 'mainnet',
+  pubkeyhash: 0x00,
+  privatekey: 0x80,
+  scripthash: 0x05,
+  xpubkey: 0x0488b21e,
+  xprivkey: 0x0488ade4,
+  networkMagic: 0xf9beb4d9,
+  port: 8333,
+  dnsSeeds: [
+    'seed.bitcoin.sipa.be',
+    'dnsseed.bluematt.me',
+    'dnsseed.bitcoin.dashjr.org',
+    'seed.bitcoinstats.com',
+    'seed.bitnodes.io',
+    'bitseed.xf2.org'
+  ]
+  
+
+
 
 ## Principles
 
-Bitcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Bitcoin network allows for highly resilient bitcoin infrastructure, and the developer community needs reliable, open-source tools to implement bitcoin apps and services.
+Zerocoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Zerocoin network allows for highly resilient bitcoin infrastructure, and the developer community needs reliable, open-source tools to implement bitcoin apps and services.
 
 ## Get Started
 
 ```
-npm install bitcore-lib
+npm install bitcore-lib-zcoin
 ```
 
 ```
-bower install bitcore-lib
+bower install bitcore-lib-zcoin
 ```
 
 ## Documentation
