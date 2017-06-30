@@ -10,10 +10,11 @@ A pure and powerful JavaScript Zerocoin (Zcoin) library.
 TODO
 
 ```
-bitcore-build 
-bitcore-lib.min.js maybe to -zcoin?
+bitcore-build is not zcoinified.
 
-lib/networks.js - zcoin nodes?
+lib/networks.js - zcoin main parameter check.
+
+Testnet DNS and parameters.
 
 ```
 
@@ -22,21 +23,21 @@ lib/networks.js livenet and testnet to zcoin network ::
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x00,
-  privatekey: 0x80,
-  scripthash: 0x05,
-  xpubkey: 0x0488b21e,
-  xprivkey: 0x0488ade4,
-  networkMagic: 0xf9beb4d9,
-  port: 8333,
+  pubkeyhash: 0x32, // 50 is 0x32
+  privatekey: 0xb2, // 178 is 0xb2
+  scripthash: 0x07, // 7 is 0x7
+  xpubkey: 0x0488b21e, // xpub bitcoin default
+  xprivkey: 0x0488ade4, // xprivkey bitcoin default
+  networkMagic: 0xe3d9fef1,
+  port: 8888,
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
+    'sf1.zcoin.io',
+    'sf2.zcoin.io',
+    'london.zcoin.io',
+    'singapore.zcoin.io',
+    'nyc.zcoin.io'
   ]
+});
   
 
 
