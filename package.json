@@ -1,7 +1,6 @@
 {
   "name": "bitcore-lib-zcoin",
   "version": "0.14.0",
-  "repository": "git://github.com/technoprenerd/bitcore-lib-zcoin.git",
   "description": "A pure and powerful JavaScript Zcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
@@ -73,6 +72,10 @@
     "bip70",
     "multisig"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technoprenerd/bitcore-lib-zcoin"
+  },
   "browser": {
     "request": "browser-request"
   },
